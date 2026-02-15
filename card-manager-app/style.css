@@ -1,0 +1,231 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Segoe UI", sans-serif;
+ }
+
+ body {
+     min-height: 100vh;
+     background: linear-gradient(135deg, #c7d2fe, #e0f2fe);
+     padding: 50px;
+ }
+
+ /* Glass Container */
+ .container {
+     max-width: 1200px;
+     margin: auto;
+     padding: 35px;
+     border-radius: 18px;
+     background: rgba(255, 255, 255, 0.35);
+     backdrop-filter: blur(14px);
+     -webkit-backdrop-filter: blur(14px);
+     box-shadow:
+         0 20px 40px rgba(0, 0, 0, 0.15),
+         inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+ }
+
+ /* Header */
+ .header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 25px;
+ }
+
+ .header h1 {
+     color: #1f2937;
+ }
+
+ .add-btn {
+     padding: 12px 22px;
+     background: #756ef5;
+     color: white;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 17px;
+ }
+
+ .add-btn:hover {
+     background: #382fa0;
+ }
+
+ /* Search Bar */
+ .search-box {
+     margin-bottom: 30px;
+     display: flex;
+     justify-content: center;
+     position: relative;
+ }
+
+ .search-box input {
+     width: 100%;
+     max-width: 420px;
+     padding: 12px 16px;
+     border-radius: 10px;
+     border: none;
+     outline: none;
+     font-size: 14px;
+     background: rgba(255, 255, 255, 0.7);
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ /* Cards */
+ .card-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+     gap: 22px;
+ }
+
+ .card {
+     background: rgba(255, 255, 255, 0.85);
+     border-radius: 14px;
+     overflow: hidden;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+     transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
+
+ .card:hover {
+     transform: translateY(-6px);
+     box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+ }
+
+ .card img {
+     width: 100%;
+     height: 160px;
+     object-fit: cover;
+ }
+
+ .card-content {
+     padding: 18px;
+ }
+
+ .card-content h3 {
+     margin-bottom: 8px;
+     color: #111827;
+ }
+
+ .card-content p {
+     font-size: 14px;
+     color: #4b5563;
+     margin-bottom: 18px;
+ }
+
+ .card-actions {
+     display: flex;
+     justify-content: flex-end;
+     align-items: flex-end;
+ }
+
+ .action-btns {
+     display: flex;
+     gap: 8px;
+ }
+
+ .edit-btn {
+     background: #85efcd;
+     border: none;
+     padding: 6px 12px;
+     border-radius: 6px;
+     color: white;
+     cursor: pointer;
+     font-size: 14px;
+ }
+
+ .delete-btn {
+     background: #f16565;
+     border: none;
+     padding: 6px 12px;
+     border-radius: 6px;
+     color: white;
+     cursor: pointer;
+     font-size: 14px;
+ }
+
+
+ .card-form {
+     /* position: absolute;
+    top: 25%;
+    left: 35%; */
+     display: none;
+     width: 360px;
+     background: #ffffff;
+     padding: 24px;
+     border-radius: 16px;
+     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+     margin: 40px auto;
+ }
+
+ .card-form h2 {
+     text-align: center;
+     margin-bottom: 20px;
+     color: #2e3a59;
+ }
+
+ .input-group {
+     margin-bottom: 15px;
+ }
+
+ .input-group label {
+     display: block;
+     font-size: 14px;
+     margin-bottom: 6px;
+     color: #444;
+ }
+
+ .input-group input {
+     width: 100%;
+     padding: 10px;
+     border-radius: 10px;
+     border: 1px solid #d3dcff;
+     outline: none;
+     font-size: 14px;
+     resize: none;
+ }
+
+ .input-group #info {
+     height: 90px;
+ }
+
+ .input-group input:focus {
+     border-color: #7a8cff;
+ }
+
+ .create-card {
+     width: 100%;
+     padding: 12px;
+     border: none;
+     border-radius: 12px;
+     background: #7a8cff;
+     color: #ffffff;
+     font-size: 16px;
+     cursor: pointer;
+     margin-top: 10px;
+ }
+
+ .create-card:hover {
+     background: #6476ff;
+ }
+
+ .cancel-card {
+     width: 100%;
+     padding: 12px;
+     border: none;
+     border-radius: 12px;
+     background: #ee7474;
+     color: #ffffff;
+     font-size: 16px;
+     cursor: pointer;
+     margin-top: 10px;
+ }
+
+ .cancel-card:hover {
+     background: #e74444;
+ }
+
+ .no-results {
+    text-align: center;
+     display: none;
+     font-size: 17px;
+ }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Card Manager App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Card Manager</h1>
+            <button class="add-btn">+ Add Card</button>
+        </div>
+
+        <!-- Card Creator Form -->
+        <form class="card-form" autocomplete="off">
+            <h2>Create Card</h2>
+
+            <div class="input-group">
+                <label>Image URL</label>
+                <input type="text" id="imgUrl" placeholder="https://example.com/image.jpg">
+            </div>
+
+            <div class="input-group">
+                <label>Heading</label>
+                <input type="text" placeholder="Card Title">
+            </div>
+
+            <div class="input-group">
+                <label>Information</label>
+                <input id="info" placeholder="Write card information here..."></input>
+            </div>
+
+            <button class="create-card" type="submit">Create Card</button>
+            <button class="cancel-card" type="button">Cancel</button>
+        </form>
+
+        <!-- search........ -->
+        <div class="search-box">
+            <input type="text" id="search-box" placeholder="Search cards...">
+        </div>
+
+        <!-- cards....... -->
+        <div class="card-grid">
+
+            <!-- <div class="card">
+                <img src="https://picsum.photos/400/300?1">
+                <div class="card-content">
+                    <h3>Card One</h3>
+                    <p>This is a modern glass styled card.</p>
+                    <div class="card-actions">
+                        <div class="action-btns">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+        <p class="no-results">No results found</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
