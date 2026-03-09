@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: cadetblue;
+    background-image: -webkit-linear-gradient(rgb(175, 75, 75), rgb(31, 31, 31), rgb(59, 153, 148));
+    min-height: 800px;
+}
+
+#game {
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    background: url(https://img.freepik.com/free-vector/outdoor-green-nature-background_1308-52121.jpg?semt=ais_rp_50_assets&w=740&q=80);
+    background-size: cover;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+#block {
+    position: relative;
+    height: 500px;
+    width: 50px;
+    background-color: blue;
+    left: 400px;
+    animation: block 2s linear infinite;
+}
+
+@keyframes block {
+    0% {
+        left: 400px;
+    }
+
+    100% {
+        left: -50px;
+    }
+}
+
+#hole {
+    position: relative;
+    height: 150px;
+    width: 50px;
+    background-color: yellow;
+    left: 400px;
+    top: -500px;
+    animation: block 2s linear infinite;
+}
