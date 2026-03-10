@@ -55,14 +55,43 @@ body {
     animation: block 2s linear infinite;
 }
 
-#bird{
+#bird {
     position: fixed;
     height: 50px;
     width: 50px;
     top: 100px;
 }
 
-#bird img{
+#bird img {
     height: 50px;
     width: 50px;
+}
+
+#result {
+    display: none;
+    height: 200px;
+    width: 500px;
+    background-color: brown;
+    margin: 5rem auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#result #btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 11px;
+    background-color: green;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#result #text {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: seashell;
 }
