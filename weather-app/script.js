@@ -2,7 +2,7 @@ let input = document.querySelector("input");
 let searchBtn = document.querySelector(".search-btn");
 let container = document.querySelector(".container");
 
-const apiKey = "e859ed6794164e85aff172452252708";
+const apiKey = "YOUR_API_KEY";
 
 searchBtn.addEventListener("click", () => {
 
